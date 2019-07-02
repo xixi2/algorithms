@@ -110,8 +110,8 @@ void BinayHeap<Comparable>::insert(const Comparable &x) {
 
     // 上滤
 //    array[0] = std::move(x);        // 不能直接移动x,因为x是不可变的
-    Comparable tmp = x;             // 复制一份x
-    array[0] = std::move(x);
+    Comparable copy = x;             // 复制一份x
+    array[0] = std::move(copy);
     for (; array[hole / 2] > x; hole /= 2) {
         array[hole] = std::move(array[hole / 2]);
     }
