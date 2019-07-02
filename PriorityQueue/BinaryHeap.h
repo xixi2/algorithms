@@ -75,7 +75,7 @@ void BinayHeap<Comparable>::percolateDown(int hole) {
 
     for (; hole * 2 <= currentSize; hole = child) {
         child = 2 * hole;
-        if (child + 1 < currentSize && array[child + 1] < array[child]) {
+        if (child + 1 <= currentSize && array[child + 1] < array[child]) {
             child = child + 1;
         }
         if (array[child] < tmp) {
