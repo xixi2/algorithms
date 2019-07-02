@@ -17,7 +17,7 @@ class BinayHeap {
 public:
     explicit BinayHeap(int capacity = 100) : array(capacity + 1), currentSize(0) {}
 
-    explicit BinayHeap(const std::vector<Comparable> &items);
+    explicit BinayHeap(const std::vector <Comparable> &items);
 
     bool isEmpty() const { return currentSize == 0; }
 
@@ -39,7 +39,7 @@ public:
 
 private:
     int currentSize;        // 堆中元素的个数
-    std::vector<Comparable> array;      //堆的数组
+    std::vector <Comparable> array;      //堆的数组
 
     void buildHeap();
 
@@ -48,7 +48,7 @@ private:
 
 
 template<typename Comparable>
-BinayHeap<Comparable>::BinayHeap(const std::vector<Comparable> &items)
+BinayHeap<Comparable>::BinayHeap(const std::vector <Comparable> &items)
         :array(items.size() + 10), currentSize(items.size()) {
     for (int i = 0; i < items.size(); i++) {
         array[i + 1] = items[i];      // 堆中元素索引从1开始
@@ -113,6 +113,7 @@ void BinayHeap<Comparable>::insert(const Comparable &x) {
     Comparable copy = x;             // 复制一份x
     array[0] = std::move(copy);
     for (; array[hole / 2] > x; hole /= 2) {
+        // 这里在给array[hole]赋值时, 考虑到array[hole/2]在不久之后也会被改变,所以采用移动而不是拷贝的方式
         array[hole] = std::move(array[hole / 2]);
     }
     array[hole] = std::move(array[0]);
@@ -125,6 +126,7 @@ void BinayHeap<Comparable>::insert(Comparable &&x) {
     }
     int hole = ++currentSize;
     for (; hole > 1 && array[hole / 2] > x; hole /= 2) {
+        // 这里在给array[hole]赋值时, 考虑到array[hole/2]在不久之后也会被改变,所以采用移动而不是拷贝的方式
         array[hole] = std::move(array[hole / 2]);
     }
     array[hole] = std::move(x);
