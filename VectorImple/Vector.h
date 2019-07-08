@@ -62,7 +62,7 @@ public:
         for (int k = 0; k < theSize; ++k) {
             lobjects[k] = rhs.objects[k];
         }
-        delete[] rhs.objects;
+        delete[] objects;       // 释放左侧运算对象的内存空间并销毁左侧运算对象的objects
         objects = lobjects;
         theSize = rhs.theSize;
         theCapacity = rhs.theCapacity;
