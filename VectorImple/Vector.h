@@ -104,18 +104,25 @@ public:
      * @return
      */
 
-    Vector &operator=(Vector &&rhs) {
+    Vector &operator=(Vector &&rhs) noexcept {
 //        std::cout << "移动赋值运算符函数" << std::endl;
 //        std::cout << "rhs.theSize:" << rhs.theSize << " rhs.theCapcity:" << rhs.theCapacity << std::endl;
 //        for (int i = 0; i < rhs.size(); i++) {
 //            std::cout << *(rhs.objects + i) << " ";
 //        }
         std::cout << std::endl;
-        theSize = rhs.theSize;
-        theCapacity = rhs.theCapacity;
-        objects = rhs.objects;
-        rhs.objects = nullptr;
-        rhs.theCapacity = rhs.theSize = 0;
+        
+        // 检测自赋值
+        if (*this != rhs) {
+            delete objects;
+            objects = rhs.objects;
+            theSize = rhs.theSize;
+            theCapacity = rhs.theCapacity;
+
+            // 将右侧运算对象rhs置于安全可析构的状态
+            rhs.objects = nullptr;
+            rhs.theCapacity = rhs.theSize = 0;
+        }
         return *this;
     }
 
