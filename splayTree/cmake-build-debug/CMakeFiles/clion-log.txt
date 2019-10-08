@@ -1,0 +1,4 @@
+/usr/xixi2-software/CLion-2019.1.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/xixi2/文档/CLionProjects/c_algorithm/algorithms/splayTree
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/xixi2/文档/CLionProjects/c_algorithm/algorithms/splayTree/cmake-build-debug

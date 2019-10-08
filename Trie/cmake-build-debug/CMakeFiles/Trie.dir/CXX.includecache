@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xixi2/文档/CLionProjects/c_algorithm/algorithms/Trie/Trie.cpp
+Trie.h
+/home/xixi2/文档/CLionProjects/c_algorithm/algorithms/Trie/Trie.h
+
+/home/xixi2/文档/CLionProjects/c_algorithm/algorithms/Trie/Trie.h
+string
+-
+cstring
+-
+iostream
+-
+
+/home/xixi2/文档/CLionProjects/c_algorithm/algorithms/Trie/main.cpp
+iostream
+-
+string
+-
+vector
+-
+Trie.h
+/home/xixi2/文档/CLionProjects/c_algorithm/algorithms/Trie/Trie.h
+

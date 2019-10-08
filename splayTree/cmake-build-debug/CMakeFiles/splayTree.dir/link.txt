@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/splayTree.dir/main.cpp.o CMakeFiles/splayTree.dir/SplayTree.cpp.o  -o splayTree 

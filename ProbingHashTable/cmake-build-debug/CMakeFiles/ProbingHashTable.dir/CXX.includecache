@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xixi2/文档/CLionProjects/c_algorithm/ProbingHashTable/ProbingHashTable.h
+utility
+-
+vector
+-
+sys/ucontext.h
+-
+
+/home/xixi2/文档/CLionProjects/c_algorithm/ProbingHashTable/main.cpp
+iostream
+-
+ProbingHashTable.h
+/home/xixi2/文档/CLionProjects/c_algorithm/ProbingHashTable/ProbingHashTable.h
+vector
+-
+

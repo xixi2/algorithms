@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/0708_vector.dir/main.cpp.o  -o 0708_vector 

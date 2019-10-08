@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xixi2/文档/CLionProjects/c_algorithm/algorithms/AvlTree/AvlTree.h
+utility
+-
+algorithm
+-
+cmath
+-
+iostream
+-
+dsexceptions.h
+/home/xixi2/文档/CLionProjects/c_algorithm/algorithms/AvlTree/dsexceptions.h
+
+/home/xixi2/文档/CLionProjects/c_algorithm/algorithms/AvlTree/dsexceptions.h
+
+/home/xixi2/文档/CLionProjects/c_algorithm/algorithms/AvlTree/main.cpp
+iostream
+-
+vector
+-
+AvlTree.h
+/home/xixi2/文档/CLionProjects/c_algorithm/algorithms/AvlTree/AvlTree.h
+

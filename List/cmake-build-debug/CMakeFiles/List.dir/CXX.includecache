@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xixi2/文档/CLionProjects/c_algorithm/algorithms/List/List.h
+utility
+-
+
+/home/xixi2/文档/CLionProjects/c_algorithm/algorithms/List/main.cpp
+iostream
+-
+List.h
+/home/xixi2/文档/CLionProjects/c_algorithm/algorithms/List/List.h
+vector
+-
+

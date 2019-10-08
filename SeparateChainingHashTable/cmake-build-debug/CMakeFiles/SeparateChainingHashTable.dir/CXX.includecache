@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xixi2/文档/CLionProjects/c_algorithm/algorithms/SeparateChainingHashTable/SeparateChaining.cpp
+SeparateChaining.h
+/home/xixi2/文档/CLionProjects/c_algorithm/algorithms/SeparateChainingHashTable/SeparateChaining.h
+
+/home/xixi2/文档/CLionProjects/c_algorithm/algorithms/SeparateChainingHashTable/SeparateChaining.h
+vector
+-
+list
+-
+string
+-
+algorithm
+-
+functional
+-
+iostream
+-
+
+/home/xixi2/文档/CLionProjects/c_algorithm/algorithms/SeparateChainingHashTable/main.cpp
+iostream
+-
+SeparateChaining.h
+/home/xixi2/文档/CLionProjects/c_algorithm/algorithms/SeparateChainingHashTable/SeparateChaining.h
+

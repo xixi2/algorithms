@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xixi2/文档/CLionProjects/c_algorithm/algorithms/BinarySearchTree/BinarySearchTree.h
+utility
+-
+iostream
+-
+dsexceptions.h
+/home/xixi2/文档/CLionProjects/c_algorithm/algorithms/BinarySearchTree/dsexceptions.h
+
+/home/xixi2/文档/CLionProjects/c_algorithm/algorithms/BinarySearchTree/dsexceptions.h
+
+/home/xixi2/文档/CLionProjects/c_algorithm/algorithms/BinarySearchTree/main.cpp
+iostream
+-
+BinarySearchTree.h
+/home/xixi2/文档/CLionProjects/c_algorithm/algorithms/BinarySearchTree/BinarySearchTree.h
+vector
+-
+
